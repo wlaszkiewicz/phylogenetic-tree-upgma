@@ -1,0 +1,6 @@
+,s1_test,s2_test,s3_test,s4_test,s5_test,Sum
+s1_test,0,7,-3,0,-3,1
+s2_test,7,0,-3,0,-4,0
+s3_test,-3,-3,0,2,-7,-11
+s4_test,0,0,2,0,-3,-1
+s5_test,-3,-4,-7,-3,0,-17
