@@ -1,4 +1,13 @@
 def parse_fasta(file_content, max_len=20):
+    """Parses FASTA formatted text and returns a list of (header, sequence) tuples.
+
+    Args:
+        file_content (str): The content of a FASTA file as a string.
+        max_len (int, optional): Maximum length for the header (default is 20).
+
+    Returns:
+        list of tuple: A list of tuples, each containing a unique header (str) and its sequence (str).
+    """
     sequences = []
     header = None
     seq_parts = []

@@ -1,7 +1,28 @@
 import numpy as np
 
-def needleman_wunsch(seq1_str: str, seq2_str: str, match_score: int = 1,
-                     mismatch_penalty: int = -1, gap_penalty: int = -1) -> tuple[float, str, str]:
+
+def needleman_wunsch(
+        seq1_str: str,
+        seq2_str: str,
+        match_score: int = 1,
+        mismatch_penalty: int = -1,
+        gap_penalty: int = -1
+) -> tuple[float, str, str]:
+    """Performs global sequence alignment using the Needleman-Wunsch algorithm.
+
+    Args:
+        seq1_str (str): The first sequence to align.
+        seq2_str (str): The second sequence to align.
+        match_score (int, optional): Score for a match. Defaults to 1.
+        mismatch_penalty (int, optional): Penalty for a mismatch. Defaults to -1.
+        gap_penalty (int, optional): Penalty for a gap. Defaults to -1.
+
+    Returns:
+        tuple[float, str, str]: A tuple containing:
+            - The alignment score (float)
+            - The aligned first sequence (str)
+            - The aligned second sequence (str)
+    """
     seq1 = list(seq1_str)
     seq2 = list(seq2_str)
     n = len(seq1)
